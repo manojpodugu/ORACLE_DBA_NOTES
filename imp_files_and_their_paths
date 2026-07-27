@@ -31,3 +31,10 @@ Archive Log  = Old Redo History
 SPFILE       = Startup Settings
 Alert Log    = Oracle Diary
 Password File= SYSDBA Authentication
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+NOTE:
+====
+1. Oracle does not enforce fixed paths for these files.
+2. Their locations depend on how the DBA installed Oracle and configured the database.
+3. However, there are common default locations and every DBA should know what each file does.
