@@ -76,3 +76,26 @@ Used for:
 Crash recovery
 Media recovery
 Data protection
+
+3. Control File: The brain/map of the database.
+--------------------------------------------------------------------------------------------------
+
+Typical Paths:
+/oracle/oradata/ORCL/control01.ctl
+/oracle/fast_recovery_area/ORCL/control02.ctl
+
+Eg:
+control01.ctl
+control02.ctl
+control03.ctl
+
+Check Location:
+SELECT name
+FROM v$controlfile;
+
+Contains:
+Database name
+Datafile locations
+Redo log locations
+Checkpoint information
+SCN information
