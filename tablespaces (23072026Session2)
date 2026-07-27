@@ -71,3 +71,31 @@ USERS    = Business/User Data
 UNDOTBS1 = Time Machine (old values)
 TEMP     = Scratch Pad / Rough Work Area
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+EXAMPLE:
+=======
+ORCL Database
+│
+├── SYSTEM Tablespace
+│   └── system01.dbf
+│
+├── USERS Tablespace
+│   ├── users01.dbf
+│   │
+│   └── EMPLOYEES Table (Segment)
+│        │
+│        ├── Extent 1
+│        │    ├── Block 1
+│        │    ├── Block 2
+│        │    └── Block 3
+│        │
+│        └── Extent 2
+│             ├── Block 4
+│             ├── Block 5
+│             └── Block 6
+│
+├── UNDOTBS1
+│   └── undotbs01.dbf
+│
+└── TEMP
+    └── temp01.dbf
