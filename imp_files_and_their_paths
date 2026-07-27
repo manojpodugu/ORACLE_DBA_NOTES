@@ -119,3 +119,27 @@ Eg files:
 db_name
 sga_target
 processes
+
+
+5. PFILE (Parameter File): Text version of initialization parameters.
+--------------------------------------------------------------------------------------------------
+Typical Path:
+$ORACLE_HOME/dbs/
+
+Eg:
+/u01/app/oracle/product/19c/dbhome_1/dbs/initORCL.ora
+
+File:
+initORCL.ora
+
+
+6. Password File: Stores SYSDBA authentication details.
+--------------------------------------------------------------------------------------------------
+Typical Path:
+$ORACLE_HOME/dbs/
+
+Eg:
+/u01/app/oracle/product/19c/dbhome_1/dbs/orapwORCL
+
+File:
+orapwORCL  
