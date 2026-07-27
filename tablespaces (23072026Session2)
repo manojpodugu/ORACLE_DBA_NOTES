@@ -70,6 +70,25 @@ SYSAUX   = Brain's Assistant
 USERS    = Business/User Data
 UNDOTBS1 = Time Machine (old values)
 TEMP     = Scratch Pad / Rough Work Area
+----------------------------------------------------------------------------------------------------
+# Key difference between system and sysaux:
+==========================================
+SYSTEM = Mandatory for Oracle to run
+SYSAUX = Helper tablespace that offloads extra Oracle components from SYSTEM
+
+# COMPARISON TABLE
+=========================================================================================
+Feature	                          SYSTEM	                   SYSAUX
+=========================================================================================
+Purpose	                       Core Oracle metadata	      Auxiliary metadata
+Mandatory	                        Yes	                         Yes
+Contains	                    Data Dictionary	          Additional Oracle components
+Importance	                     Most critical	           Important but supporting
+Created During DB Creation	        Yes	                         Yes
+Can Oracle Run Without It?	         No	                          No
+Stores User Tables?	            Never recommended	       Never recommended
+=========================================================================================
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 EXAMPLE:
