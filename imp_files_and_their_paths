@@ -1,0 +1,22 @@
+Database Files
+├── Data Files (.dbf)
+├── Redo Log Files (.log)
+├── Control Files (.ctl)
+│
+Recovery Files
+├── Archive Logs (.arc)
+├── RMAN Backups
+│
+Instance Files
+├── SPFILE
+├── PFILE
+├── Password File
+│
+Diagnostic Files
+├── Alert Log
+├── Trace Files
+│
+Network Files
+├── listener.ora
+├── tnsnames.ora
+└── sqlnet.ora
