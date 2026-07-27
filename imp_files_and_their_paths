@@ -38,3 +38,41 @@ NOTE:
 1. Oracle does not enforce fixed paths for these files.
 2. Their locations depend on how the DBA installed Oracle and configured the database.
 3. However, there are common default locations and every DBA should know what each file does.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FILES:
+======
+1. Data files:  Store actual table data, indexes, undo data, etc.
+--------------------------------------------------------------------------------------------------
+Typical Path: "/oracle/oradata/ORCL/"
+
+Eg:
+/oracle/oradata/ORCL/system01.dbf
+/oracle/oradata/ORCL/users01.dbf
+
+Check Location:
+SELECT file_name
+FROM dba_data_files;
+
+Eg files:
+users01.dbf
+system01.dbf
+sysaux01.dbf
+undotbs01.dbf
+
+2.Redo Log Files: Store every change made to the database.
+--------------------------------------------------------------------------------------------------
+
+Typical Path: "/oracle/oradata/ORCL/"
+
+Eg:
+/oracle/oradata/ORCL/redo01.log
+
+Check Location:
+SELECT member
+FROM v$logfile;
+
+Used for:
+Crash recovery
+Media recovery
+Data protection
