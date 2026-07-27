@@ -43,8 +43,16 @@ Oracle Database
 │
 └── Other Tablespaces
     ├── SYSTEM
+            └── Knows EMPLOYEES table exists
     ├── SYSAUX
+            └── Stores monitoring information
     ├── USERS
+            └── EMPLOYEES table data
     ├── UNDOTBS1
+            └── Stores old salary value (10000)
     └── TEMP
+            └── May be used if operation requires sorting
+
+
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
