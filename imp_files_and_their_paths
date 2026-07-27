@@ -20,3 +20,14 @@ Network Files
 ├── listener.ora
 ├── tnsnames.ora
 └── sqlnet.ora
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# ANALOGY:
+Control File = Database Map
+Data File    = Actual Data
+Redo Log     = Changes
+Archive Log  = Old Redo History
+SPFILE       = Startup Settings
+Alert Log    = Oracle Diary
+Password File= SYSDBA Authentication
