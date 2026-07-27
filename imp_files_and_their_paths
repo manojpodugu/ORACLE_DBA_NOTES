@@ -99,3 +99,23 @@ Datafile locations
 Redo log locations
 Checkpoint information
 SCN information
+
+
+4. SPFILE (Server Parameter File) :Stores database startup parameters.
+--------------------------------------------------------------------------------------------------
+Typical Path:
+$ORACLE_HOME/dbs/
+
+Eg:
+/u01/app/oracle/product/19c/dbhome_1/dbs/spfileORCL.ora
+
+Check Location:
+SHOW PARAMETER spfile;
+
+File:
+spfileORCL.ora
+
+Eg files:
+db_name
+sga_target
+processes
