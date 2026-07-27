@@ -143,3 +143,25 @@ Eg:
 
 File:
 orapwORCL  
+
+
+7. Archived Redo Logs: Copies of filled redo logs.
+--------------------------------------------------------------------------------------------------
+Typical Path:
+/oracle/fast_recovery_area/
+
+Eg:
+/oracle/fast_recovery_area/ORCL/archivelog/
+
+File:
+1_1000_123456789.arc
+
+Check Location:
+ARCHIVE LOG LIST;
+or
+SHOW PARAMETER log_archive_dest;
+
+Required for:
+Point-in-time recovery
+Database recovery
+Standby databases
