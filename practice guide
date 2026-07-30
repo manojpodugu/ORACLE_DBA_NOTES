@@ -25,3 +25,5 @@ sqlplus / as sysdba --> Connect as SYSDBA. Everything after this point is run in
 SELECT name FROM v$database; --> discover basic database information. // ORCLCDB
 
 SELECT instance_name,status FROM v$instance; --> Check instance. // INSTANCE_NAME    STATUS
+
+SELECT username FROM dba_users ORDER BY username; --> Explore All Users (Schemas). Every Oracle user generally owns a schema.
