@@ -1,1 +1,27 @@
-hello
+Oracle Database
+│
+├── Instance
+│   ├── SGA
+│   └── Background Processes
+│
+└── Database
+    ├── Tablespaces
+    ├── Datafiles
+    ├── Control Files
+    ├── Redo Log Files
+    ├── Users/Schemas
+    ├── Tables
+    ├── Views
+    └── Other Objects
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whoami  --> Check current user
+sudo su - oracle --> Switch to oracle user
+lsnrctl status --> Check listener // ((DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=testserver01)(PORT=1521))))
+ps -ef | grep pmon --> Check instance. // oracle    109594       1  0 Jul28 ?        00:00:07 ora_pmon_ORCLCDB
+
+sqlplus / as sysdba --> Connect as SYSDBA. Everything after this point is run inside SQL*Plus. // {SQL> }
+
+SELECT name FROM v$database; --> discover basic database information. // ORCLCDB
+
+SELECT instance_name,status FROM v$instance; --> Check instance. // INSTANCE_NAME    STATUS
