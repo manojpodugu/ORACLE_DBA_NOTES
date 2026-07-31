@@ -129,4 +129,20 @@ Oracle Database
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+SIMPLE DEFINITIONS:
+==================
+when a user creates and updates a table:
+---------------------------------------
+SYSTEM   → knows the table exists
+SYSAUX   → records performance history
+USERS    → stores actual rows
+UNDOTBS1 → stores old copies of rows
+TEMP     → helps with temporary calculations
 
+ANALOGY:
+=======
+SYSTEM   = Oracle's Brain
+SYSAUX   = Brain's Assistant
+USERS    = Business/User Data
+UNDOTBS1 = Time Machine (old values)
+TEMP     = Scratch Pad / Rough Work Area
