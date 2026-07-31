@@ -22,8 +22,35 @@ ps -ef | grep pmon --> Check instance. // oracle    109594       1  0 Jul28 ?   
 
 sqlplus / as sysdba --> Connect as SYSDBA. Everything after this point is run inside SQL*Plus. // {SQL> }
 
+# NOTE: 
+Linux User  : oracle
+Oracle User : SYS
+Privilege   : SYSDBA
+
+
 SELECT name FROM v$database; --> discover basic database information. // ORCLCDB
 
 SELECT instance_name,status FROM v$instance; --> Check instance. // INSTANCE_NAME    STATUS
 
 SELECT username FROM dba_users ORDER BY username; --> Explore All Users (Schemas). Every Oracle user generally owns a schema.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Understand Important Users:
+===========================
+1. "SYS" : Most powerful account.
+
+Analogy: God User.
+
+Owns:
+Data Dictionary
+Internal Oracle Objects
+Core Database Objects
+---------------------------------------------------------------------
+2. "SYSTEM": Administrative account.
+
+Used for DBA activities.
+
+Analogy: Super Administrator
+---------------------------------------------------------------------
+
+
