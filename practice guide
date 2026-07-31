@@ -67,5 +67,6 @@ Maps and GIS support.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
+SELECT username, default_tablespace FROM dba_users ORDER BY username; --> Check Default Tablespaces.
+SELECT tablespace_name, contents FROM dba_tablespaces; --> Now inspect all tablespaces. (List Tablespaces).
 
