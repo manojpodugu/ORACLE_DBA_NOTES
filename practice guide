@@ -37,7 +37,7 @@ SELECT username FROM dba_users ORDER BY username; --> Explore All Users (Schemas
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Understand Important Users:
 ===========================
-1. "SYS" : Most powerful account.
+1.*** "SYS" : Most powerful account.
 
 Analogy: God User.
 
@@ -46,11 +46,23 @@ Data Dictionary
 Internal Oracle Objects
 Core Database Objects
 ---------------------------------------------------------------------
-2. "SYSTEM": Administrative account.
+2.*** "SYSTEM": Administrative account.
 
 Used for DBA activities.
 
 Analogy: Super Administrator
+---------------------------------------------------------------------
+3. XDB: XML Database functionality.
+---------------------------------------------------------------------
+4. CTXSYS: Oracle Text indexing.
+
+Used for:
+Full-text searches
+---------------------------------------------------------------------
+5. MDSYS: Spatial data.
+Maps and GIS support.
+---------------------------------------------------------------------
+6. AUDSYS: Auditing information.
 ---------------------------------------------------------------------
 
 
