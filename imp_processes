@@ -1,19 +1,18 @@
-PMON
-Process Monitor.
-Cleans failed sessions.
+DBWn: Database Writer
+Writes modified data from memory (Buffer Cache) to datafiles.
 
-SMON
-System Monitor.
-Performs recovery.
+LGWR: Log Writer
+Writes redo information "redo logs buffer" to "Redo log files"
 
-DBWn
-Database Writer.
-Writes memory changes to datafiles.
+CKPT: Checkpoint process
+Updates control files by creating points. 
 
-LGWR
-Log Writer.
-Writes redo logs.
+# Analogy: 
+Upto this point, everything has been written safely.
 
-CKPT
-Checkpoint process.
-Updates control files.
+SMON: System Monitor
+Handles instance recovery. 
+
+PMON: Process Monitor
+Cleans up failed user sessions.
+
