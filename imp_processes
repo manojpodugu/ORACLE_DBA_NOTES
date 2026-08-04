@@ -16,3 +16,13 @@ Handles instance recovery.
 PMON: Process Monitor
 Cleans up failed user sessions.
 
+ARCn: Archiver Process
+Copies filled Redo logs to "Archive Logs"
+
+RECO: Recoverer process
+It is used in distributed databases to automatically resolve failed distributed transactions.
+
+# why RECO:
+===========
+Imagine a transaction involves two databases. Then oracle uses a 2-Phase-Commit (2PC) Protocol to ensure both databases either "commit together" or "Roll back together".
+Particularly used after failure.
