@@ -1,1 +1,19 @@
+PMON
+Process Monitor.
+Cleans failed sessions.
 
+SMON
+System Monitor.
+Performs recovery.
+
+DBWn
+Database Writer.
+Writes memory changes to datafiles.
+
+LGWR
+Log Writer.
+Writes redo logs.
+
+CKPT
+Checkpoint process.
+Updates control files.
