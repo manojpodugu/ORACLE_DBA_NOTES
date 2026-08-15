@@ -1,23 +1,9 @@
+# KEY ATTRIBUTES:
+=================
+Oracle home --> /opt/oracle/product/19c/dbhome_1
+Oracle base --> /opt/oracle
+Container database --> ORCLCDB
+Pluggable database --> ORCLPDB1
+Listener --> LISTENER on TCP port 1521
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Enterprise Manager Express --> HTTPS port 5500
