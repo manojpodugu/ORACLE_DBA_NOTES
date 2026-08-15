@@ -7,3 +7,25 @@ Pluggable database --> ORCLPDB1
 Listener --> LISTENER on TCP port 1521
 
 //Enterprise Manager Express --> HTTPS port 5500
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# SETTING the Oracle User Environment:
+======================================
+sudo su - oracle --> Switch to the operating-system oracle user. Oracle utilities use environment variables to determine which database instance and Oracle home you intend to manage.
+
+Add the following variables to the end of ~/.bash_profile . Use an editor such as vi or nano: (to enable to them for every session)
+-----------------------------------------------------------------------------------------------------------------------------------
+export ORACLE_BASE=/opt/oracle
+export ORACLE_HOME=/opt/oracle/product/19c/dbhome_1
+export ORACLE_SID=ORCLCDB
+export PATH="$ORACLE_HOME/bin:$PATH"
+
+Load the settings into the current shell and confirm them:
+---------------------------------------------------------
+source ~/.bash_profile
+echo "$ORACLE_HOME" --> EXPECTED --> /opt/oracle/product/19c/dbhome_1
+echo "$ORACLE_SID" --> EXPECTED --> ORCLCDB
+
+
+
